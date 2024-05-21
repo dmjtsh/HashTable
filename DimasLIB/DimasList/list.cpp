@@ -159,7 +159,7 @@ unsigned ListRemoveFirst(List* list)
 
 bool ListSearch(List* list, Value_t elem_to_search)
 {
-	ERROR_PROCESSING(list, ListVerifier, ListDump, ListDtor);
+	//ERROR_PROCESSING(list, ListVerifier, ListDump, ListDtor);
 
 	Node* node_ptr = &list->data[list->head];
 

@@ -3,7 +3,8 @@
 
 typedef long long Hash_t;
 
-Hash_t Hash(const void* value);
+Hash_t OptCRC32Hash(const void* value);
+Hash_t CRC32Hash(const void* value);
 Hash_t AsciiCodeSumHash(const void* value);
 Hash_t StrlenHash(const void* value);
 Hash_t FirstLetterHash(const void* value);

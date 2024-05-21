@@ -8,12 +8,12 @@ def plot_histogram(counts, output_filename):
     plt.bar(range(len(counts)), counts)
     plt.xlabel('Index of Hash Table')
     plt.ylabel('Number of elements')
-    plt.title('Histogram of Dimas Hash Table (ZeroHash)')
+    plt.title('Histogram of Dimas Hash Table (CRC32Hash)')
 
     plt.savefig(output_filename)
     plt.show()
 
-output_filename = 'ZeroHash.jpg'
+output_filename = 'CRC32Hash.jpg'
 filename = 'data/hash_table_data.txt'
 
 counts = read_histogram(filename)

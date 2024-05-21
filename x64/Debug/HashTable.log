@@ -1,3 +1,4 @@
-﻿  main.cpp
-C:\Users\79370\Desktop\HashTable\HashTable\DimasLIB\DimasList\list.h(25,36): warning C4244: 'initializing': conversion from 'double' to 'size_t', possible loss of data
+﻿  hash.cpp
+C:\Users\79370\Desktop\HashTable\HashTable\DimasLIB\DimasHash\hash.cpp(87,25): warning C4244: '=': conversion from 'unsigned __int64' to 'uint32_t', possible loss of data
+C:\Users\79370\Desktop\HashTable\HashTable\DimasLIB\DimasHash\hash.cpp(88,25): warning C4244: '=': conversion from 'unsigned __int64' to 'uint32_t', possible loss of data
   HashTable.vcxproj -> C:\Users\79370\Desktop\HashTable\x64\Debug\HashTable.exe
