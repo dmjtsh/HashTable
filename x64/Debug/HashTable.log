@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\79370\Desktop\HashTable\HashTable\DimasLIB\DimasList\list.h(25,36): warning C4244: 'initializing': conversion from 'double' to 'size_t', possible loss of data
+  HashTable.vcxproj -> C:\Users\79370\Desktop\HashTable\x64\Debug\HashTable.exe

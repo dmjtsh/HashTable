@@ -163,13 +163,10 @@ bool ListSearch(List* list, Value_t elem_to_search)
 
 	Node* node_ptr = &list->data[list->head];
 
-	while(true)
+	while(node_ptr != nullptr && node_ptr->value != nullptr)
 	{
 		if(strcmp(elem_to_search, node_ptr->value) == 0)
 			return true;
-
-		if(node_ptr->next == ELEM_INDEX_POISON)
-			return false;
 
 		node_ptr = &list->data[node_ptr->next];
 	}

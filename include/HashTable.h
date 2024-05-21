@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "list.h"
-#include "hash.h"
-#include "text_info.h"
+#include "../DimasLIB/DimasList/list.h"
+#include "../DimasLIB/DimasHash/hash.h"
+#include "../DimasLIB/DimasTextInfo/text_info.h"
 
-const size_t HASH_TABLE_INIT_CAPACITY = 200;
+const size_t HASH_TABLE_INIT_CAPACITY = 301;
 
 struct HashTable
 {
@@ -14,6 +14,10 @@ struct HashTable
 
     Hash_t (*hash_function)(const void* value);
 };
+
+double HashTableCountDispersion(HashTable* hash_table, const char* data_filename);
+
+void HashTableBuildHistogram(HashTable* hash_table, const char* hash_func_name);
 
 bool HashTableSearch(HashTable* hash_table, const Value_t value);
 
