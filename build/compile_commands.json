@@ -1,0 +1,37 @@
+[
+{
+  "directory": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/build",
+  "command": "/usr/bin/c++ -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/include -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo -g -std=gnu++17 -o CMakeFiles/hash_table.dir/main.cpp.o -c /home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/main.cpp",
+  "file": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/main.cpp"
+},
+{
+  "directory": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/build",
+  "command": "/usr/bin/c++ -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/include -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo -g -std=gnu++17 -o CMakeFiles/hash_table.dir/DimasLIB/DimasHash/hash.cpp.o -c /home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash/hash.cpp",
+  "file": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash/hash.cpp"
+},
+{
+  "directory": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/build",
+  "command": "/usr/bin/c++ -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/include -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo -g -std=gnu++17 -o CMakeFiles/hash_table.dir/DimasLIB/DimasList/list.cpp.o -c /home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList/list.cpp",
+  "file": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList/list.cpp"
+},
+{
+  "directory": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/build",
+  "command": "/usr/bin/c++ -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/include -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo -g -std=gnu++17 -o CMakeFiles/hash_table.dir/DimasLIB/DimasList/list_io.cpp.o -c /home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList/list_io.cpp",
+  "file": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList/list_io.cpp"
+},
+{
+  "directory": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/build",
+  "command": "/usr/bin/c++ -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/include -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo -g -std=gnu++17 -o CMakeFiles/hash_table.dir/DimasLIB/DimasTextInfo/text_info.cpp.o -c /home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo/text_info.cpp",
+  "file": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo/text_info.cpp"
+},
+{
+  "directory": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/build",
+  "command": "/usr/bin/c++ -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/include -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo -g -std=gnu++17 -o CMakeFiles/hash_table.dir/DimasLIB/DimasUtilities/utilities.cpp.o -c /home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasUtilities/utilities.cpp",
+  "file": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasUtilities/utilities.cpp"
+},
+{
+  "directory": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/build",
+  "command": "/usr/bin/c++ -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/include -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasList -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasHash -I/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/DimasLIB/DimasTextInfo -g -std=gnu++17 -o CMakeFiles/hash_table.dir/src/HashTable.cpp.o -c /home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/src/HashTable.cpp",
+  "file": "/home/dmit/Desktop/PROGRAMMING/DED_2SEM/HashTable/src/HashTable.cpp"
+}
+]
