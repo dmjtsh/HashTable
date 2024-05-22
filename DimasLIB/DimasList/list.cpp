@@ -165,7 +165,7 @@ static inline int OptStrCmp(const char* str1, const char* str2)
 
     int result = 0;
 
-  asm (
+    asm (
     "mov     esi, %0"              
     "mov     edi, %1"              
 
@@ -183,6 +183,7 @@ static inline int OptStrCmp(const char* str1, const char* str2)
     : 
     : "r" (str1), "r" (str2), "m" (result)   
     );
+
     return result;
 }
 
