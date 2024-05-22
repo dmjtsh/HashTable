@@ -2,6 +2,7 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
+#include <intrin.h>
 
 #include "list.h"
 #include "../DimasUtilities/error_processing.h"
@@ -155,6 +156,34 @@ unsigned ListRemove(List* list, size_t remove_index)
 unsigned ListRemoveFirst(List* list)
 {
 	return ListRemove(list, list->tail);
+}
+
+static inline int OptStrCmp(const char* str1, const char* str2)
+{
+    assert(str1);
+    assert(str2);
+
+    int result = 0;
+
+  asm (
+    "mov     esi, %0"              
+    "mov     edi, %1"              
+
+    // Loading Our Strings to xmm regs
+    "movdqu  xmm0, [esi]"            
+    "movdqu  xmm1, [edi]"            
+    "pcmpeqb xmm0, xmm1"             
+    "pmovmskb eax, xmm0"   
+    // If all bits are equal set al to one
+    "cmp     eax, 0xFFFF"            
+    "sete    al"                    
+    "movzx   eax, al"     
+
+    "mov     %2, eax"           
+    : 
+    : "r" (str1), "r" (str2), "m" (result)   
+    );
+    return result;
 }
 
 bool ListSearch(List* list, Value_t elem_to_search)
