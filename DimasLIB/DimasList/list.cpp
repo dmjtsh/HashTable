@@ -2,7 +2,6 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <string.h>
-#include <intrin.h>
 
 #include "list.h"
 #include "../DimasUtilities/error_processing.h"
@@ -160,42 +159,38 @@ unsigned ListRemoveFirst(List* list)
 
 static inline int OptStrCmp(const char* str1, const char* str2)
 {
-    assert(str1);
-    assert(str2);
+    assert(str1 != nullptr);
+    assert(str2 != nullptr);
 
     int result = 0;
 
-    asm (
-    "mov     esi, %0"              
-    "mov     edi, %1"              
+    __asm__ inline (
+        ".intel_syntax noprefix\n\t"
+        "vlddqu ymm1, [%1]\n\t"
+        "vptest ymm1, [%2]\n\t"
 
-    // Loading Our Strings to xmm regs
-    "movdqu  xmm0, [esi]"            
-    "movdqu  xmm1, [edi]"            
-    "pcmpeqb xmm0, xmm1"             
-    "pmovmskb eax, xmm0"   
-    // If all bits are equal set al to one
-    "cmp     eax, 0xFFFF"            
-    "sete    al"                    
-    "movzx   eax, al"     
+        "setc %b0\n\t"                       
 
-    "mov     %2, eax"           
-    : 
-    : "r" (str1), "r" (str2), "m" (result)   
+        ".att_syntax prefix\n\t"
+
+        : "+r" (result)
+        : "r" (str1), "r" (str2)
     );
 
     return result;
 }
 
-bool ListSearch(List* list, Value_t elem_to_search)
-{
+// Replaced With ASM Func
+
+//bool ListSearch(List* list, Value_t elem_to_search);
+/*{
 	//ERROR_PROCESSING(list, ListVerifier, ListDump, ListDtor);
 
 	Node* node_ptr = &list->data[list->head];
 
 	while(node_ptr != nullptr && node_ptr->value != nullptr)
 	{
-		if(strcmp(elem_to_search, node_ptr->value) == 0)
+		if(OptStrCmp(elem_to_search, node_ptr->value) == 0)
 			return true;
 
 		node_ptr = &list->data[node_ptr->next];
@@ -203,6 +198,7 @@ bool ListSearch(List* list, Value_t elem_to_search)
 
 	return false;
 }
+*/
 
 unsigned ListCtor(List* list)
 {

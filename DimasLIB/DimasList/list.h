@@ -59,7 +59,7 @@ size_t ListInsertBack(List* list, Value_t new_value);
 size_t ListInsertAfter (List* list, size_t elem_index, Value_t new_elem_value);
 size_t ListInsertBefore(List* list, size_t elem_index, Value_t new_elem_value);
 
-bool ListSearch(List* list, Value_t elem_to_search);
+extern "C" bool ListSearch(List* list, Value_t elem_to_search);
 
 unsigned ListRemoveFirst(List* list);
 unsigned ListRemoveLast (List* list);

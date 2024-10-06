@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdint.h>
-#include <intrin.h>
+#include <x86intrin.h>
 #include <assert.h>
 
 #include "hash.h"

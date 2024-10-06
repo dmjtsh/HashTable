@@ -1,10 +1,10 @@
-﻿#include <intrin.h>
+﻿#include <x86intrin.h>
 #include <stdint.h>
 #include <stdio.h>
 
-#include "include\HashTable.h"
-#include "DimasLIB\DimasTextInfo\text_info.h"
-#include "DimasLIB\DimasHash\hash.h"
+#include "include/HashTable.h"
+#include "DimasLIB/DimasTextInfo/text_info.h"
+#include "DimasLIB/DimasHash/hash.h"
 
 constexpr size_t TESTS_COUNT = 2000;
 
@@ -23,7 +23,7 @@ int main(int argc, char** argv)
     HashTableInit(&hash_table, &text_info);
 
     //HashTableBuildHistogram(&hash_table, "CRC32Hash");
-    //printf("%lf", HashTableCountDispersion(&hash_table, "data/hash_table_data.txt"));
+    printf("%lf\n", HashTableCountDispersion(&hash_table, "data/hash_table_data.txt"));
     
     uint64_t timer_start = 0;
     uint64_t timer_end   = 0;

@@ -60,7 +60,7 @@ void HashTableBuildHistogram(HashTable* hash_table, const char* hash_func_name)
 
     fclose(py_file);
 
-    system("python data/graphic_builder.py");
+    system("python3 data/graphic_builder.py");
 }
 
 double CountMeanValue(int* counts, int size) 

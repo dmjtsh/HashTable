@@ -1,3 +1,5 @@
+#include <cstddef>
+
 #ifndef TEXT_INFO_H
 #define TEXT_INFO_H
 
